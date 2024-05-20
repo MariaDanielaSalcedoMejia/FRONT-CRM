@@ -5,10 +5,10 @@ import { ArticuloComponent } from './page/articulo/articulo.component';
 import { ContactoComponent } from './page/contacto/contacto.component';
 import { ImagenesComponent } from './page/imagenes/imagenes.component';
 import { InicioComponent } from './page/inicio/inicio.component';
-import { NombresComponent } from './page/nombres/nombres.component';
 import { PersonaComponent } from './page/persona/persona.component';
 import { UsuariosComponent } from './page/usuarios/usuarios.component';
 import { ProductosComponent } from './page/productos/productos.component';
+import { ClientesComponent } from './page/clientes/clientes.component';
 
 export const routes: Routes = [
   {
@@ -42,8 +42,8 @@ export const routes: Routes = [
       },
       {
         path: PATH.NOMBRE,
-        title: 'nombres',
-        component: NombresComponent,
+        title: 'Clientes',
+        component: ClientesComponent,
       },
       {
         path: PATH.ARTICULO,

@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-nombres',
+  selector: 'app-Clientes',
   standalone: true,
   imports: [],
-  templateUrl: './nombres.component.html',
-  styleUrl: './nombres.component.css',
+  templateUrl: './Clientes.component.html',
+  styleUrl: './Clientes.component.css',
 })
-export class NombresComponent {
-  nombres: string[] = [
+export class ClientesComponent {
+  Clientes: string[] = [
     'Juan Pérez',
     'María García',
     'Carlos Martínez',

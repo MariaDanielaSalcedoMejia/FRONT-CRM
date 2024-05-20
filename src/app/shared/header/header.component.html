@@ -1,25 +1,25 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <img src="./assets/image/logo.png" width="30" />
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid ">
+    <a class="navbar-brand " href="#">
+      <img src="./assets/image/logo.png" width="70%" class="img-responsive"  />
     </a>
-    <button
-      class="navbar-toggler"
+    <!-- <button
+      class="navbar-toggler "
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown"
       aria-expanded="false"
       aria-label="Toggle navigation"
+
     >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
+      <span class="navbar-toggler-icon  "></span>
+    </button> -->
+    <div class="navbar navbar-expand-lg navbar-light bg-dark container-fluid "  id="navbarNavDropdown">
+      <ul class="navbar-nav ">
         @for (menu of menuItems; track $index) {
-        <li class="nav-item" [class]="menu.classCss">
-          <i [class]="menu.icon"></i>
-          <a class="nav-link" [routerLink]="menu.path">{{ menu.title }}</a>
+        <li class="nav-item text-warning" [class]="menu.classCss">
+         <a class="nav-link text-warning" [routerLink]="menu.path">{{ menu.title }}</a>
         </li>
         @if (menu.subMenu.length > 0 ) {
 
