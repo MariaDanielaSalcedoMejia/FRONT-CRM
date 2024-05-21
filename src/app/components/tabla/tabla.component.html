@@ -1,9 +1,9 @@
-<h4 class="text-center">{{ titulo }}</h4>
+<h4 class="text-center contenedor-titulo">{{ titulo }}</h4>
 
 <div class="table-responsive">
   <table class="table table-striped">
     <thead>
-      <tr>
+      <tr >
         @for (columna of columnas; track $index) {
         <ng-container>
           <th>{{ formatearNombreDeColumnas(columna) }}</th>

@@ -1,4 +1,6 @@
 export class UsuarioModel {
+  direccion: any;
+  telefono: any;
   constructor(
     public readonly _id: string,
     public nombre: string,

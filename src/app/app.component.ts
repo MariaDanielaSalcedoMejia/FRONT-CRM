@@ -1,12 +1,12 @@
+
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ArticuloComponent } from './page/articulo/articulo.component';
-import { ImagenesComponent } from './page/imagenes/imagenes.component';
 import { InicioComponent } from './page/inicio/inicio.component';
-import { ClientesComponent } from './page/Clientes/Clientes.component';
-import { PersonaComponent } from './page/persona/persona.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { ClientesComponent } from './page/clientes/clientes.component';
+
+
 
 @Component({
   selector: 'app-root',
@@ -16,12 +16,10 @@ import { HeaderComponent } from './shared/header/header.component';
   imports: [
     RouterOutlet,
     InicioComponent,
-    ArticuloComponent,
     ClientesComponent,
-    PersonaComponent,
-    ImagenesComponent,
     HeaderComponent,
     FooterComponent,
+
   ],
 })
 export class AppComponent {
